@@ -2,7 +2,7 @@
  * @param {number[]} A
  * @param {number} K
  * @return {number}
- * https://leetcode.com/problems/smallest-range-i/submissions/
+ * https://leetcode.com/problems/smallest-range-i/submissions/ 
  */
 var smallestRangeI = function (A, K) {
     // Find the biggest number
