@@ -12,23 +12,17 @@ var smallestRangeI = function (A, K) {
     });
 
     if (A.length != 1) {
-        var value;
         let initialDiff = sorted[sorted.length - 1] - sorted[0];
         if (initialDiff > K) {
             if (K * 2 > initialDiff) {
                 return 0;
             } else {
-                value = (sorted[sorted.length - 1] - K) - (sorted[0] + K);
-                console.log(value);
-                return value;
+                return (sorted[sorted.length - 1] - K) - (sorted[0] + K);
             }
         } else {
-            value = (sorted[sorted.length - 1] + K) - (sorted[0] + K);
-            console.log(value);
             return 0;
         }
     } else {
         return 0;
     }
-
 };
